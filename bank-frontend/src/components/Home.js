@@ -4,30 +4,27 @@ import Typewriter from "typewriter-effect";
 const HomePage = () => {
   return (
     <>
-    <div className="home-topscreen">
-      <div className="home-leftscreen">
-        <h2>
-        Bankpill</h2>
-        <div>
-        <h3>
-        <Typewriter
-        options={{
-            loop:true,
-        }}
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("Welcomes You...")
-              .pauseFor(1000)
-              .start()
-          }}
-        />
-        </h3>
+      <div className="home-topscreen">
+        <div className="home-leftscreen">
+          <h2>The Sparks Bank</h2>
+          <div>
+            <h3>
+              <Typewriter
+                options={{
+                  loop: true,
+                }}
+                onInit={typewriter => {
+                  typewriter
+                    .typeString("Welcomes You...")
+                    .pauseFor(1000)
+                    .start();
+                }}
+              />
+            </h3>
+          </div>
         </div>
-        
+        <img src={HomeImage} alt="React Logo" />
       </div>
-      <img src={HomeImage} alt="React Logo" />
-    </div>
-    
     </>
   );
 };

@@ -18,14 +18,14 @@ app.use(cors());
 app.use("/users", userRoutes);
 
 //static production asset
-if (process.env.NODE_ENV === "production") {
+// if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "bank-frontend", "build")));
   app.get("*", (req, res) => {
     res.sendFile(
       path.resolve(__dirname, "bank-frontend", "build", "index.html")
     );
   });
-}
+// }
 
 // PORT //
 const PORT = process.env.PORT || 4000;

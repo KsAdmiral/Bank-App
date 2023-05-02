@@ -9,7 +9,7 @@ const NavBar = () => {
       <Container>
         <Navbar.Brand href="#home">
           <img src={SparkLogo} className="nav-logo" alt="React Logo" /> The
-          Bankpill
+          Sparks Bank
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
